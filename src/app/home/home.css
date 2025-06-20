@@ -1,0 +1,46 @@
+.home-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+
+.custom-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.custom-col {
+    flex: 0 0 100%;
+    max-width: 600px;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.custom-shadow {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+
+.custom-border {
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+}
+
+.custom-margin {
+    margin: 1rem;
+    padding: 2rem 1rem;
+}
+
+.custom-text-center {
+    text-align: center;
+}
+
+.custom-rounded-circle {
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 1rem auto;
+}

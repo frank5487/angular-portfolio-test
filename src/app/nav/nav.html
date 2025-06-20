@@ -1,0 +1,13 @@
+<nav class="custom-navbar">
+    <div class="custom-container">
+        <ul class="custom-nav">
+            @for (category of categories; track category) {
+                <li class="custom-nav-item">
+                    <a class="custom-nav-link" [routerLink]="category.toLowerCase()" [routerLinkActive]="'text-dark'">
+                        {{ category }}
+                    </a>
+                </li>
+            }
+        </ul>
+    </div>
+</nav>
