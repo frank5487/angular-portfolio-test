@@ -1,0 +1,15 @@
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.project-card-wrapper {
+    flex: 1 1 320px;
+    max-width: 380px;
+    min-width: 320px;
+    display: flex;
+    justify-content: center;
+}

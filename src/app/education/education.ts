@@ -10,7 +10,7 @@ import { EducationService } from '../services/education.service';
 })
 export class Education implements OnInit {
 
-  educations = {} as EducationModel[];
+  educations: Array<EducationModel> = [];
 
   constructor(private educationService: EducationService) {
   }

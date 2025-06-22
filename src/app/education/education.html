@@ -1,14 +1,21 @@
 <div class="education-container">
     @for (education of educations; track education) {
-        <li>
-            <ul>school: {{education.school}}</ul>
-            <ul>degree: {{education.degree}}</ul>
-            <ul>fieldOfStudy: {{education.fieldOfStudy}}</ul>
-            <ul>startDate: {{education.startDate}}</ul>
-            <ul>endDate: {{education.endDate}}</ul>
-            @for (description of education.descriptions; track description) {
-                <ul>description: {{description}}</ul>
-            }
-        </li>
+        <div class="education-card">
+            <div class="education-header">
+                <span class="education-school">{{ education.school }}</span>
+                <span class="education-dates">
+                    {{ education.startDate }} - {{ education.endDate || 'Present' }}
+                </span>
+            </div>
+            <div class="education-details">
+                <span class="education-degree">{{ education.degree }}</span>
+                <span class="education-field">{{ education.fieldOfStudy }}</span>
+            </div>
+            <ul class="education-descriptions">
+                @for (description of education.descriptions; track description) {
+                    <li>{{ description }}</li>
+                }
+            </ul>
+        </div>
     }
 </div>
